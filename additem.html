@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADD ITEM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="additem.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <script src="additem.css"></script>
+    
+      <div class="heading">
+			<div>Kimetsu No Yaiba</div>
+		</div>
+		<div id="navbar">
+  			<a href="home.html">Home</a>
+  			<a class="active" href="javascript:void(0)">Add Item</a>
+  			
+  			<a href="buyerdetails.html">Billing Details</a>
+  			<a href="Query.html">Query</a>
+  			<a href="signout.html">Sign Out</a>
+        </div>
+        
+        <h1 class="page-heading" style="color: azure;">CHOOSE THE ITEM YOU DESIRE</h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card" style="width: 20rem; position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; border-radius: 15px;">
+                <img src="Tanjiro.jpg" class="card-img-top" alt="..." style=" height: 300px; border-radius: 15px 15px 0px 0px; ">
+              <div class="card-body">
+                <h5 class="card-title">Tanjiro</h5>
+                <h6 class="card-title text">(Rs 500)</h6>
+                <p class="card-text">Tanjiro Kamado is the main protagonist of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer in the Demon Slayer Corps, who joined to find a remedy to turn his sister, Nezuko Kamado, back into a human and to hunt down and kill demons in order to protect others from suffering the same fate as him.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-item-form" data-item-type="Toy" >Add item </button>
+
+                <div id="like_button_container" class="btn btn-primary" ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card" style="width: 20rem; position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; border-radius: 15px;">
+                  <img src="Zenitsu_2.jpg" class="card-img-top" alt="..." style=" height: 300px; border-radius: 15px 15px 0px 0px;">
+                <div class="card-body">
+                  <h5 class="card-title text">Zenitsu</h5>
+                  <h6 class="card-title text">(Rs 500)</h6>
+                  <p class="card-text">Zenitsu Agatsuma is one of the main protagonists of Demon Slayer: Kimetsu no Yaiba and along with Inosuke Hashibira, a travelling companion of Tanjiro Kamado and Nezuko Kamado. He is also a Demon Slayer in the Demon Slayer Corps.</p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-item-form" data-item-type="Toy">Add item</button>
+                  <div id="like_button_container1"class="btn btn-primary"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+            <div class="card" style="width: 20rem; position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; border-radius: 15px;">
+              <img src="Tomioka.jpg" class="card-img-top" alt="..." style=" height: 365px; border-radius: 15px 15px 0px 0px;">
+              <div class="card-body">
+                <h5 class="card-title text">Tomioka</h5>
+                <h6 class="card-title text">(Rs 500)</h6>
+                <p class="card-text">Giyu Tomioka is a Demon Slayer and the Water Pillar of the Demon Slayer Corps. He is voiced by Takahiro Sakurai in the Japanese version of the anime, and by Johnny Yong Bosch in the English version of the anime.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-item-form" data-item-type="Toy">Add Item</button>
+                <div id="like_button_container2"class="btn btn-primary"></div>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem; position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; border-radius: 15px;">
+                    <img src="Rengoku.jpg" class="card-img-top" alt="..." style=" height: 320px; border-radius: 15px 15px 0px 0px;">
+                  <div class="card-body">
+                    <h5 class="card-title text">Rengoku</h5>
+                    <h6 class="card-title text">(Rs 500)</h6>
+                    <p class="card-text">Kyojuro Rengoku was a major supporting character of Demon Slayer: Kimetsu no Yaiba and a major character in the Mugen Train Arc. He was a Demon Slayer of the Demon Slayer Corps and the former Flame Hashira .</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-item-form" data-item-type="Toy">Add Item</button>
+                    <div id="like_button_container3"class="btn btn-primary"></div>
+                  </div>
+                </div>
+              </div>
+                  
+              <div class="modal fade" id="add-item-form" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel">Enter Details</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="add">
+                        <div class="form-group" >
+                          <label for="item-type" class="form-control-label">Item Type :</label>
+                          <input type="text" class="form-control" id="item-type" value="Action Figure" disabled>
+                        </div>
+                        <div class="form-group">
+                          <label for="item-name" class="form-control-label">Name :</label>
+                          <input list="fig" class="form-control" id="item-name" required>
+                          <datalist class="in" id="fig">
+                            <option>Tanjiro</option>
+                            <option>Zenitsu</option>
+                            <option>Tomioka</option>
+                            <option>Rengoku</option>
+                          </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity" class="form-control-label">Quantity :</label>
+                            <input type="number" class="form-control" id="quantity" required>
+                        </div><br>
+
+                        <button type="submit" id="submit" class="btn btn-primary">Add Item(s)</button>
+                        <button type="button" id="view" class="btn btn-secondary" style="background-color:green ;">View Items</button>
+                        <button type="button" id="clear" class="btn btn-secondary" style="background-color:red ;">Clear all items</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <br>
+                        
+                      </form>
+                    </div>
+                    <script>
+                      document.getElementById('clear').addEventListener('click',clear);
+                      function clear(){
+                        sessionStorage.clear()
+                        alert("Items Cleared")
+                      }
+                      document.getElementById('view').addEventListener('click', view);
+                      function view(){
+                        console.log(sessionStorage.getItem("uname"));
+
+                        alert("Your items are \n" +sessionStorage.getItem("allEntries"))
+                      }
+                    </script>
+                    <script>
+                      console.log(sessionStorage.getItem("uname"));
+                      document.getElementById('add').addEventListener('submit', submitForm);
+                      function submitForm(e){
+                        e.preventDefault();
+                        alert("Item added");
+
+                        var existingEntries = JSON.parse(sessionStorage.getItem("allEntries"));
+                        if(existingEntries == null) existingEntries = [];
+                        var name = document.getElementById("item-name").value;
+                        var quantity = document.getElementById("quantity").value;
+                        var entry = {
+                            "Item-Name": name,
+                            "Quantity": quantity
+                        };
+                        sessionStorage.setItem("entry", JSON.stringify(entry));
+                        // Save allEntries back to local storage
+                        existingEntries.push(entry);
+                        sessionStorage.setItem("allEntries", JSON.stringify(existingEntries));
+                          
+                        console.log(sessionStorage.getItem("allEntries"));
+                        document.getElementById('add').reset();}
+
+                    </script>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>    
+   
+
+        <div class="footer">
+                <table align="margin-right">
+                      <tr>
+                        <td width="500" height="30"><u><b>Contact Us</b></u></td>
+                        <td width="500" height="30"><u><b>About Us</b></u></td>
+                        <td width="500" height="30"><b>Share & Subscribe</b></td>
+                      </tr>
+                      <tr>
+                        <td width="500" height="10">+91 9876543210</td>
+                        <td width="500" height="10"><u>FAQ's</u></td>
+                        <td width="500" height="40"><u><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a></u></td>
+                      </tr>
+                      <tr>
+                        <td width="500" height="10">+91 9893634698</td>
+                        <td width="500" height="10">Something here</td>
+                        <td width="500" height="40"><u><a href="#" class="fa fa-google"></a><a href="#" class="fa fa-linkedin"></a></u></td>
+                      </tr>
+                </table>
+        </div>		
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+       <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+      <script src="like_button.js"type="text/babel"></script>
+      <script>
+        
+      </script>
+    </body>   
+</html>
